@@ -7,7 +7,7 @@ CREATE TABLE card_34 (
     remote_img varchar(255)
 )
 
-INSERT INTO card_34 (id, title, descrip, catagory, img, remote_img)
+INSERT INTO card_34 (id, title, descrip, category, img, remote_img)
 VALUES
 (1, 'Seven Reasons Why Coffee Is Awesome', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'lifestyle', '/images/photo-1.jpg','https://wkuwjlgjzkovodskzcca.supabase.co/storage/v1/object/public/demo-34/card-34/photo-1.jpg'),
 (2, 'Travel To Paris', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'travel', '/images/photo-2.jpg','https://wkuwjlgjzkovodskzcca.supabase.co/storage/v1/object/public/demo-34/card-34/photo-2.jpg'),
