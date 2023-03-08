@@ -12,6 +12,7 @@ var usersRouter = require('./routes/users');
 
 const cardRouter_34 = require('./routes/card_34');
 const card2Router_34 = require('./routes/card2_34');
+const card2ApiRouter_34 = require('./routes/api/apiCard2Router_34');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/users', usersRouter);
 
 app.use('/card_34', cardRouter_34);
 app.use('/card2_34', card2Router_34);
+app.use("/api/card2_34", card2ApiRouter_34);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
