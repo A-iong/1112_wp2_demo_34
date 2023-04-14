@@ -24,7 +24,7 @@ const midprepRouter_xx = require('./routes/midprep_34');
 
 const apiMidprepRouter_34 = require('./routes/api/apiMidprepRouter_34');
 
-const apiMiddleProject_34 = require('./routes/api/apiMiddleProject_34');
+const apiMidProject_34 = require('./routes/api/apiMidProject_34');
 
 var app = express();
 
@@ -56,7 +56,7 @@ console.log(testDB)
 
 app.use('/midprep_34', midprepRouter_xx);
 app.use('/api/midprep_34', apiMidprepRouter_34);
-app.use('/api/middle_project', apiMiddleProject_34);
+app.use('/api/mid_project', apiMidProject_34);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
