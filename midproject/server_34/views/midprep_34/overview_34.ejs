@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Clothing</title>
+    <link rel="stylesheet" href="/crown/css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="/" class="logo-container">
+        <img src="/crown/assets/crown.svg" />
+      </a>
+      <div class="options">
+        <a href="/shop" class="option">Shop</a>
+        <a href="/shop" class="option">Contact</a>
+        <a href="/signin" class="option">Sign In</a>
+        <div class="cart-icon" onclick="cartToggle()">
+          <img
+            class="shopping-icon"
+            src="/crown/assets/shopping-bag.svg"
+            alt=""
+          />
+        </div>
+        <div class="cart-dropdown">
+          <div class="cart-items">
+            <div class="cart-item">
+              <img src="/crown/img/hats/brown-brim.png"
+              <div class="item-details">
+                <span class="name">Brown Cowboy</span>
+                <span class="price">4 * $35</span>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img
+                src="/crown/img/hats/brown-brim.png"
+                alt="item"
+              />
+              <div class="item-details">
+                <span class="name">Blue Jean Jacket</span>
+                <span class="price">1 * $90</span>
+              </div>
+            </div>
+            <button class="custom-button">GO TO CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-page">
+      <h1 style="text-align: center">Midprep_34:<%= name %> <%= ID %></h1>
+      <div class="collection-overview">
+        <div class="collection-preview">
+          <h2 class="title">Hats</h2>
+          <div class="preview">
+            <div class="collection-item">
+              <img class="image" src="/crown/img/hats/brown-brim.png" />
+              <div class="collection-footer">
+                <span class="name">Brown Brim</span>
+                <span class="price">25</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/blue-beanie.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Blue Beanie</span>
+                <span class="price">18</span>
+              </div>
+              <button class="custom-button">Add to Card</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-cowboy.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Brown Cowboy</span>
+                <span class="price">35</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img class="image" src="/crown/img/hats/grey-brim.png"/>
+              <div class="collection-footer">
+                <span class="name">Grey Brim</span>
+                <span class="price">25</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="collection-preview">
+          <h1 class="title">Jackets</h1>
+          <div class="preview">
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/jackets/black-shearling.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Black Jean Shearling</span>
+                <span class="price">125</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/jackets/blue-jean-jacket.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Blue Jean Jacket</span>
+                <span class="price">90</span>
+              </div>
+              <button class="custom-button">Add to Card</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/jackets/grey-jean-jacket.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Grey Jean Jacket</span>
+                <span class="price">90</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/jackets/brown-shearling.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Brown Shearling</span>
+                <span class="price">165</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="collection-preview">
+          <h2 class="title">Sneakers</h2>
+          <div class="preview">
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Adidas NMD</span>
+                <span class="price">220</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img class="image" src="/crown/img/hats/brown-brim.png"/>
+              <div class="collection-footer">
+                <span class="name">Adidas Yeezy</span>
+                <span class="price">280</span>
+              </div>
+              <button class="custom-button">Add to Card</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Black Converse</span>
+                <span class="price">110</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Nike White AirForce</span>
+                <span class="price">160</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="collection-preview">
+          <h2 class="title">Womens</h2>
+          <div class="preview">
+            <div class="collection-item">
+              <img class="image" src="/crown/img/hats/brown-brim.png"/>
+              <div class="collection-footer">
+                <span class="name">Blue Tanktop</span>
+                <span class="price">25</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Floral Blouse</span>
+                <span class="price">20</span>
+              </div>
+              <button class="custom-button">Add to Card</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Floral Dress</span>
+                <span class="price">80</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Red Dots Dress</span>
+                <span class="price">80</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="collection-preview">
+          <h2 class="title">Mens</h2>
+          <div class="preview">
+            <div class="collection-item">
+              <img class="image" src="/crown/img/hats/brown-brim.png"/>
+              <div class="collection-footer">
+                <span class="name">Camo Down Vest</span>
+                <span class="price">325</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Floral T-shirt</span>
+                <span class="price">20</span>
+              </div>
+              <button class="custom-button">Add to Card</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Black & White Longsleeve</span>
+                <span class="price">25</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+            <div class="collection-item">
+              <img
+                class="image"
+                src="/crown/img/hats/brown-brim.png"
+              />
+              <div class="collection-footer">
+                <span class="name">Pink T-shirt </span>
+                <span class="price">25</span>
+              </div>
+              <button class="custom-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function cartToggle() {
+        p = document.querySelector('.cart-dropdown');
+        p.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>
