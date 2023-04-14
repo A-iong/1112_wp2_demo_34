@@ -8,12 +8,11 @@ import DemoReducer_34 from './DemoReducer_34';
 
 // let api_url = `http://localhost:5000/api/midprep_34/overview2_34`;
 
-// let api_url = `http://localhost:5100/api/midprep_34/overview2_34`;
-let api_url = `http://localhost:5001/api/middle_project/210410196`;
+let api_url = `http://localhost:5002/api/mid_project/210410634`;
 
 const initialState = {
-  pName: 'ChungChun Wang',
-  pId: '210410196',
+  pName: 'A-ion',
+  pId: '210410634',
   blogs: [],
   blogs2: [],
   data1: [],

@@ -5,8 +5,8 @@ import Wrapper from "../../assets/wrapper/midprep_34/Products_scss_34";
 // import Wrapper from '../../assets/wrapper/midprep_xx/Products_css_xx';
 
 const ProductsStaticPage_34 = () => {
-  const [name, setName] = useState("ChungChun Wang");
-  const [id, setId] = useState("210410196");
+  const [name, setName] = useState("A-ion");
+  const [id, setId] = useState("210410634");
 
   return (
     <Wrapper>

@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 
 import Wrapper from "../../assets/wrapper/midprep_34/Products_scss_34";
 
-// import { useDemoContext_34 } from '../../context/DemoContext_34'
-import { useServerContext_34 } from '../../context/ServerContext_34'
+import { useDemoContext_34 } from '../../context/DemoContext_34'
 
 const MiddleProjectNodeServerContextPage_34 = () => {
-  const { pName, pId, data1, data2 } = useServerContext_34();
+  const { pName, pId, data1, data2 } = useDemoContext_34();
   console.log(data1);
   return (
     <Wrapper>
@@ -20,7 +19,7 @@ const MiddleProjectNodeServerContextPage_34 = () => {
         <div className="shop-page">
           <div className="collection-overview">
             <div className="collection-preview">
-              <h1 className="title">Country 1</h1>
+              <h1 className="title">Coffee one</h1>
               <div className="preview">
                 {data2.map((item) => {
                   const { pid, pname, price, cat_id, img_url } = item;
@@ -38,7 +37,7 @@ const MiddleProjectNodeServerContextPage_34 = () => {
               </div>
             </div>
             <div className="collection-preview">
-              <h2 className="title">Country 2</h2>
+              <h2 className="title">Coffee two</h2>
               <div className="preview">
                 {data1.map((item) => {
                   const { pid, pname, price, cat_id, img_url } = item;

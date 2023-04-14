@@ -2,12 +2,10 @@ import { useState, useEffect } from "react";
 
 import Wrapper from "../../assets/wrapper/midprep_34/Products_scss_34";
 
-// import { useDemoContext_34 } from '../../context/DemoContext_34'
-// import { useServerContext_34 } from '../../context/ServerContext_34'
-import { useSupabaseContext_34 } from '../../context/SupabaseContext_34'
+import { useDemoContext_34 } from '../../context/DemoContext_34'
 
 const MiddleProjectNodeServerContextPage_34 = () => {
-  const { pName, pId, blogs } = useSupabaseContext_34();
+  const { pName, pId, blogs } = useDemoContext_34();
   return (
     <Wrapper>
       <section className="blogs">

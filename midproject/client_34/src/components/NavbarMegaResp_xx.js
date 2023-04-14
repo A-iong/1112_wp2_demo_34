@@ -25,7 +25,7 @@ const NavbarResp_xx = () => {
                 </Link>
               </li>
               <li className="menu-item dropdown">
-                <Link to="#">MiddleProject_34 +</Link>
+                <Link to="#">MidProject_34 +</Link>
                 <div className="sub-menu-wrapper slideInUp">
                   <ul className="sub-menu">
                     <li className="menu-item">

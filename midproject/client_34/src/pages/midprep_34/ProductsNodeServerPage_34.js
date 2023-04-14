@@ -7,8 +7,8 @@ import Wrapper from "../../assets/wrapper/midprep_34/Products_scss_34";
 let api_url = `http://localhost:5100/api/midprep_34/overview2_34`;
 
 const ProductsNodeServerPage_34 = () => {
-  const [name, setName] = useState("ChungChun Wang");
-  const [id, setId] = useState("210410196");
+  const [name, setName] = useState("A-ion");
+  const [id, setId] = useState("210410634");
 
   const [data1, setData1] = useState([]);
 
