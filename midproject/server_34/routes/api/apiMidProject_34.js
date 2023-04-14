@@ -3,13 +3,13 @@ var router = express.Router();
 
 const db = require('../../utils/database');
 
-router.get('/2104101', async function (req, res, next) {
+router.get('/210410634', async function (req, res, next) {
   try {
     const results1 = await db.query(
-      `select * from middle_product_34 where cat_id='5'`
+      `select * from middle_product_34 where cat_id='1'`
     );
     const results2 = await db.query(
-      `select * from middle_product_34 where cat_id='1'`
+      `select * from middle_product_34 where cat_id='2'`
     );
     res.json({ data1: results1.rows, data2: results2.rows });
   } catch (error) {
