@@ -9,8 +9,8 @@ import BlogsSupabasePage_xx from './pages/BlogsSupabasePage_xx';
 import ProductsStaticPage_34 from './pages/midprep_34/ProductsStaticPage_34';
 import ProductsNodeServerPage_34 from './pages/midprep_34/ProductsNodeServerPage_34';
 import ProductsNodeServerContextPage_34 from './pages/midprep_34/ProductsNodeServerContextPage_34';
-import MiddleProjectNodeServerContextPage_34 from './pages/middle_project/MiddleProject_Server34';
-import MiddleProjectSupabaseContextPage_34 from './pages/middle_project/MiddleProject_Supabase34';
+import MidProjectNodeServerContextPage_34 from './pages/middle_project/MidProject_Server34';
+import MidProjectSupabaseContextPage_34 from './pages/middle_project/MiddleProject_Supabase34';
 
 
 
@@ -28,8 +28,8 @@ function App_xx() {
         <Route path='/midp_static_34' element={<ProductsStaticPage_34 />} />
         <Route path='/midp_node_34' element={<ProductsNodeServerPage_34 />} />
         <Route path='/midp_node_context_34' element={<ProductsNodeServerContextPage_34 />} />
-        <Route path='/middle_project_server_34' element={<MiddleProjectNodeServerContextPage_34 />} />
-        <Route path='/middle_project_supabase_34' element={<MiddleProjectSupabaseContextPage_34 />} />
+        <Route path='/mid_project_server_34' element={<MidProjectNodeServerContextPage_34 />} />
+        <Route path='/mid_project_supabase_34' element={<MidProjectSupabaseContextPage_34 />} />
       </Routes>
     </BrowserRouter>
   );

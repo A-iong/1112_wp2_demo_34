@@ -4,8 +4,9 @@ import Wrapper from "../../assets/wrapper/midprep_34/Products_scss_34";
 
 import { useDemoContext_34 } from '../../context/DemoContext_34'
 
-const MiddleProjectNodeServerContextPage_34 = () => {
+const MiddleProjectSupabaseContextPage_34 = () => {
   const { pName, pId, blogs } = useDemoContext_34();
+  console.log(blogs)
   return (
     <Wrapper>
       <section className="blogs">
@@ -18,7 +19,7 @@ const MiddleProjectNodeServerContextPage_34 = () => {
         <div className="shop-page">
           <div className="collection-overview">
             <div className="collection-preview">
-              <h1 className="title">Countrys</h1>
+              <h1 className="title">Coffees</h1>
               <div className="preview">
                 {blogs.map((item) => {
                   const { pid, pname, price, cat_id, img_url } = item;
@@ -42,4 +43,4 @@ const MiddleProjectNodeServerContextPage_34 = () => {
   );
 };
 
-export default MiddleProjectNodeServerContextPage_34;
+export default MiddleProjectSupabaseContextPage_34;

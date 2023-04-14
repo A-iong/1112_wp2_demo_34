@@ -4,11 +4,11 @@ import axios from 'axios';
 
 import DemoReducer_34 from './DemoReducer_34';
 
-// import { supabase } from '../db/clientSupabse';
+import { supabase } from '../db/clientSupabse';
 
 // let api_url = `http://localhost:5000/api/midprep_34/overview2_34`;
 
-let api_url = `http://localhost:5002/api/mid_project/210410634`;
+// let api_url = `http://localhost:5002/api/mid_project/210410634`;
 
 const initialState = {
   pName: 'A-ion',
@@ -24,35 +24,35 @@ const DemoContext_34 = React.createContext();
 const DemoProvider_34 = ({ children }) => {
   const [state, dispatch] = useReducer(DemoReducer_34, initialState);
 
-  const fetchProductDataFromNodeServer = async () => {
-    try {
-      const results = await axios.get(api_url);
-      console.log('results', results.data);
-      dispatch({ type: 'GET_PRODUCTS_NODE_SUCCESS', payload: results.data });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const fetchProductDataFromNodeServer = async () => {
+  //   try {
+  //     const results = await axios.get(api_url);
+  //     console.log('results', results.data);
+  //     dispatch({ type: 'GET_PRODUCTS_NODE_SUCCESS', payload: results.data });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchProductDataFromNodeServer();
-  }, []);
+  // useEffect(() => {
+  //   fetchProductDataFromNodeServer();
+  // }, []);
 
-  //   const fetchBlogDataFromSupabase = async () => {
-  //     try {
-  //       let { data, error } = await supabase.from('card_34').select('*');
+    const fetchBlogDataFromSupabase = async () => {
+      try {
+        let { data, error } = await supabase.from('middle_product_34').select('*');
 
-  //       console.log('data', data);
-  //       dispatch({ type: 'GET_BLOGS_SUPABASE_SUCCESS', payload: data });
-  //       //   setData(data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
+        console.log('data', data);
+        dispatch({ type: 'GET_BLOGS_SUPABASE_SUCCESS', payload: data });
+        //   setData(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
 
-  //   useEffect(() => {
-  //     fetchBlogDataFromSupabase();
-  //   }, []);
+    useEffect(() => {
+      fetchBlogDataFromSupabase();
+    }, []);
 
   return (
     <DemoContext_34.Provider value={{ ...state }}>

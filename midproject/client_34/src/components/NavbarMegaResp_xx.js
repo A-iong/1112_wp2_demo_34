@@ -29,10 +29,10 @@ const NavbarResp_xx = () => {
                 <div className="sub-menu-wrapper slideInUp">
                   <ul className="sub-menu">
                     <li className="menu-item">
-                      <Link to="/middle_project_server_34">Node Server</Link>
+                      <Link to="/mid_project_server_34">Node Server</Link>
                     </li>
                     <li className="menu-item">
-                      <Link to="/middle_project_supabase_34">
+                      <Link to="/mid_project_supabase_34">
                         Supabase 
                       </Link>
                     </li>
